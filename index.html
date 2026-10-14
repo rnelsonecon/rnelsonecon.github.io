@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-layout="sidebar" data-pal="navy">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Richard E. Nelson, PhD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="id">
+  <nav class="nav">
+    <a class="brand" href="#top">Richard E. Nelson</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#pubs">Publications</a></li>
+      <li><a href="#grants">Funding</a></li>
+      <li><a href="#career">Timeline</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="hero" id="top">
+    <div class="hero-text">
+      <div class="kicker" id="kicker"></div>
+      <h1 id="name"></h1>
+      <p class="lede" id="lede"></p>
+      <p class="roles" id="roles"></p>
+      <div class="links" id="links"></div>
+    </div>
+    <div class="photo"><span>RN</span><img src="photo.jpg" alt="Portrait of Richard E. Nelson" onerror="this.remove()"></div>
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<main>
+  <section id="about">
+    <h2><span class="num">01</span>About</h2>
+    <div class="body" id="bio"></div>
+  </section>
+
+  <section id="research">
+    <h2><span class="num">02</span>Research</h2>
+    <div class="body"><div class="areas" id="areas"></div></div>
+  </section>
+
+  <section id="pubs">
+    <h2><span class="num">03</span>Publications</h2>
+    <div class="body">
+      <div class="map-note">
+        <span><span class="legend-dot fill"></span>First or senior author</span>
+        <span><span class="legend-dot"></span>Co-author</span>
+        <span class="seg map-seg"><button data-map="matrix">Timeline</button><button data-map="net">Network</button></span>
+      </div>
+      <div class="map-scroll" id="matrix"></div>
+      <div id="net" hidden></div>
+      <div class="pubs" id="publist"></div>
+    </div>
+  </section>
+
+  <section id="grants">
+    <h2><span class="num">04</span>Funding</h2>
+    <div class="body"><div class="grants" id="grantlist"></div></div>
+  </section>
+
+  <section id="career">
+    <h2><span class="num">05</span>Timeline</h2>
+    <div class="body"><ol class="career" id="careerlist"></ol></div>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">06</span>Contact</h2>
+    <div class="body" id="contactbody"></div>
+  </section>
+
+  <footer id="foot"></footer>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="data.js"></script>
+<script src="viz.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
